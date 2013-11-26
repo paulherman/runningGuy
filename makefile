@@ -6,7 +6,6 @@ OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=runningGuy
 
 all: $(SOURCES) $(EXECUTABLE)
-	rm *.o
 
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
